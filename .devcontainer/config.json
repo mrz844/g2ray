@@ -1,4 +1,9 @@
 {
+  "log": {
+    "loglevel": "warning",
+    "access": "/tmp/xray_access.log",
+    "error": "/tmp/xray_error.log"
+  },
   "inbounds": [
     {
       "port": 443,
@@ -12,9 +17,12 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/"
+        "network": "xhttp",
+        "security": "none",
+        "xhttpSettings": {
+          "path": "/",
+          "mode": "packet-up",
+          "host": "{{host}}"
         }
       }
     }
