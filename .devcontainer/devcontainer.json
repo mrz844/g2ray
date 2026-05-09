@@ -15,7 +15,7 @@
   "postStartCommand": {
     "public": "gh codespace ports visibility 443:public -c $CODESPACE_NAME",
     "xray": "sudo /usr/local/bin/xray -c /etc/config.json",
-    "telegram": "IP='140.82.121.3' && curl -s -X POST https://api.telegram.org/bot8209285922:AAHviF6HK8kKGmYB1HVnkANW9PJnb9HJiVA/sendMessage -d chat_id=1227411114 --data-urlencode text=\"✅ VLESS LINK: vless://550e8400-e29b-41d4-a716-446655440000@${IP}:443?encryption=none&security=tls&type=xhttp&mode=packet-up&sni=${CODESPACE_NAME}-443.app.github.dev&path=%2F#ghtun\""
+    "telegram": "IP='140.82.121.4' && curl -s -X POST https://api.telegram.org/bot8209285922:AAHviF6HK8kKGmYB1HVnkANW9PJnb9HJiVA/sendMessage -d chat_id=1227411114 --data-urlencode text=\"✅ VLESS LINK: vless://550e8400-e29b-41d4-a716-446655440000@${IP}:443?encryption=none&security=tls&type=xhttp&mode=packet-up&sni=${CODESPACE_NAME}-443.app.github.dev&path=%2F#ghtun\""
   },
   "portsAttributes": {
     "443": {
